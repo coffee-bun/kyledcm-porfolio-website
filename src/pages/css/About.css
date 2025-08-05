@@ -1,4 +1,33 @@
-.about-container {
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Container just wraps the sections */
+.about {
+  scroll-snap-type: y mandatory;
+}
+
+/* Main Section*/
+.abt-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  font-size: 2rem;
+}
+
+/* Section 1 Style*/
+.about-1 {
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+/* Section 2 Style*/
+.about-2 {
+  background-color: #e0f0ff;
+  border: 1px solid black;
 }

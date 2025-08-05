@@ -3,9 +3,13 @@ import '../css/About.css';
 
 function Home() {
   return (
-    <div className="about-container">
-      <h2>Welcome to my Portfolio!</h2>
-      <p>This is the About page.</p>
+    <div className="about">
+      <div className="abt-section about-1">
+        <h1>Welcome to my Porfofio</h1>
+      </div>
+      <div className="abt-section about-2">
+        <h1>Welcome to Section 2</h1>
+      </div>
     </div>
   );
 }
