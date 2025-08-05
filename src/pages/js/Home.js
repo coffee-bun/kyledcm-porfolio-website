@@ -31,8 +31,9 @@ function Home() {
         <div className="section2-content">
           <h1 className="section-title">Technical Proficiencies & Tools</h1>
           <p className="section-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada. 
+           Throughout my academic experience, I have worked with a variety of development and testing tools to design and implement user-centric systems. 
+           I focused on building clean, responsive user interfaces while also conducting both functional and usability testing to ensure system reliability and quality.
+           This background has equipped me with a well-rounded understanding of both software development and quality assurance practices.
           </p>
 
           {/* first Column */}
