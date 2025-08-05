@@ -22,12 +22,11 @@ body {
 
 /* Section 1 Style*/
 .ctc-1 {
-  background-color: #f8f8f8;
-  border: 1px solid black;
-  margin-bottom: 20px;
+  background-color: #FFFFFA;
+  margin-bottom: 50px;
 }
 /* Section 2 Style*/
 .ctc-2 {
   background-color: #e0f0ff;
-  border: 1px solid black;
+  margin-bottom: 10px;
 }

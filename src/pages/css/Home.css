@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
   color: white; 
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .intro-text {
@@ -39,21 +39,21 @@ body {
 }
 /* Text 1 Name */
 .intro-text h1 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 .typing-1 {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid white;
+  border-right: 2px solid white;
   width: 0;
   animation: typing 2s steps(30, end) forwards, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 22ch; } 
+  to { width: 20ch; } 
 }
 
 @keyframes blink {
@@ -62,7 +62,7 @@ body {
 }
 /* Section 2 Title */
 .intro-text h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 0;
 }
@@ -75,17 +75,32 @@ body {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
+/* Subtext or Quote Style */
+.subtext {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 70px;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1s;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
 
 .enter-button {
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   cursor: pointer;
-  border: 2px solid white;
-  padding: 10px 25px;
+  border: 1px solid rgba(255, 255, 255, 0.692);;
+  padding: 10px 45px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0px;
   transition: all 0.3s ease;
   animation: fadeIn 2s ease-in-out forwards;
   animation-delay: 1s;
@@ -93,7 +108,7 @@ body {
 }
 
 .enter-button:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.808);
   color: black;
   transform: scale(1.05);
 }
@@ -101,7 +116,143 @@ body {
 
 /* Section 2 Style */
 .section-2 {
-  background-color: #f8f8f8;
-  border: 1px solid black;
-
+  background-color: #FFFFFA;
+  margin-bottom: 10px;
 }
+
+.section2-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* first and second columns */
+.first-column,
+.second-column {
+  background-color: #ffb24700;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  background-color: #ffffff;
+  height: 160px; 
+  width: 160px;  
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.tech-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-icon:hover {
+  transform: scale(1.15);
+  filter: grayscale(100%) brightness(1.2);
+}
+
+.tech-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Icon Images */
+.html-icon {
+  background-image: url('/public/images/html-icon.png');
+}
+
+.css-icon {
+  background-image: url('/public/images/css-icon.png');
+}
+
+.bootstrap-icon {
+  background-image: url('/public/images/bootstrap-icon.png');
+}
+
+.react-icon {
+  background-image: url('/public/images/react-icon.png');
+}
+
+.flask-icon {
+  background-image: url('/public/images/flask-icon.png');
+}
+
+.flutterflow-icon {
+  background-image: url('/public/images/flutterflow-icon.png');
+}
+
+.c-icon {
+  background-image: url('/public/images/c-icon.png');
+}
+
+.cpp-icon {
+  background-image: url('/public/images/cpp-icon.png');
+}
+
+.javascript-icon {
+  background-image: url('/public/images/javascript-icon.png');
+}
+
+.python-icon {
+  background-image: url('/public/images/python-icon.png');
+}
+
+.mabl-icon {
+  background-image: url('/public/images/mabl-icon.png');
+}
+
+.selenium-icon {
+  background-image: url('/public/images/selenium-icon.png');
+}
+
+
+
+
+
