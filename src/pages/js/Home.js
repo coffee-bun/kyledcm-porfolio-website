@@ -26,16 +26,29 @@ function Home() {
         </div>
       </div>
 
+        {/* Middle Section */}
+        <div className="section section-middle">
+          <div className="middle-content">
+            <h1>About Me</h1>
+            <p>
+              I am passionate about combining clean design with efficient code. My goal is to deliver user-friendly, visually appealing, and reliable applications.
+            </p>
+          </div>
+        </div>
+
       {/* Section 2 Structure */}
       <div className="section section-2">
         <div className="section2-content">
           <h1 className="section-title">Technical Proficiencies & Tools</h1>
           <p className="section-description">
-           Throughout my academic experience, I have worked with a variety of development and testing tools to design and implement user-centric systems. 
+           Throughout my academic experience, I have worked with a variety of development and testing tools to design and implement systems that are easy and enjoyable for people to use. 
            I focused on building clean, responsive user interfaces while also conducting both functional and usability testing to ensure system reliability and quality.
            This background has equipped me with a well-rounded understanding of both software development and quality assurance practices.
           </p>
 
+    {/* Divider line */}
+    <hr className="section-divider" />
+    
           {/* first Column */}
           <div className="first-column">
             <div className="tech-icons">
