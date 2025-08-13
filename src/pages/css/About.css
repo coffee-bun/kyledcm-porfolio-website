@@ -30,3 +30,280 @@ body {
   background-color: #FFFFFA;
   margin-bottom: 10px;
 }
+
+/* Section 2 Style */
+.section-2 {
+  background-color: #FFFFFA;
+  margin-bottom: 20px;
+  min-height: 100vh;
+  padding-top: 0px;
+  padding-bottom: 00px;
+}
+
+.section2-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.section-description {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Divider */
+.section-divider {
+  width: 80%;
+  max-width: 900px;
+  height: 2px;
+  background-color: #ccc;
+  border: none;
+  margin: 15px auto 30px auto;
+}
+/* first and second columns */
+.first-column,
+.second-column {
+  background-color: #ffb24700;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.first-column {
+  margin-bottom: -10px;
+
+}
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  background-color: #ffffff;
+  height: 90px; 
+  width: 90px;  
+  border-radius: 15px;
+  margin: 5px;
+}
+.tech-icon {
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) contrast(200%) brightness(0.8);
+}
+.tech-icon:hover {
+  transform: scale(1.15);
+  filter: grayscale(100%) contrast(250%) brightness(0.8);
+}
+.tech-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Icon Images */
+.html-icon {
+  background-image: url('/public/images/html-icon.png');
+}
+
+.css-icon {
+  background-image: url('/public/images/css-icon.png');
+}
+
+.bootstrap-icon {
+  background-image: url('/public/images/bootstrap-icon.png');
+}
+
+.react-icon {
+  background-image: url('/public/images/react-icon.png');
+}
+
+.flask-icon {
+  background-image: url('/public/images/flask-icon.png');
+}
+
+.flutterflow-icon {
+  background-image: url('/public/images/flutterflow-icon.png');
+}
+
+.c-icon {
+  background-image: url('/public/images/c-icon.png');
+}
+
+.cpp-icon {
+  background-image: url('/public/images/cpp-icon.png');
+}
+
+.javascript-icon {
+  background-image: url('/public/images/javascript-icon.png');
+}
+
+.python-icon {
+  background-image: url('/public/images/python-icon.png');
+}
+
+.mabl-icon {
+  background-image: url('/public/images/mabl-icon.png');
+}
+
+.selenium-icon {
+  background-image: url('/public/images/selenium-icon.png');
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .intro-text h1 {
+    font-size: 4rem;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.6rem;
+  }
+  
+  .subtext {
+    font-size: 1.3rem;
+    max-width: 500px;
+  }
+  
+  .tech-item {
+    height: 140px;
+    width: 140px;
+  }
+  
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .tech-name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 3rem;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.4rem;
+  }
+  
+  .subtext {
+    font-size: 1.1rem;
+    margin-top: 50px;
+    max-width: 400px;
+  }
+  
+  .enter-button {
+    font-size: 1rem;
+    padding: 8px 35px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+  }
+  
+  .tech-item {
+    height: 120px;
+    width: 120px;
+  }
+  
+  .tech-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .tech-name {
+    font-size: 1rem;
+  }
+  
+  .tech-icons {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-text {
+    padding-bottom: 80px;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.2rem;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    margin-top: 40px;
+    max-width: 300px;
+  }
+  
+  .enter-button {
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 0.9rem;
+  }
+  
+  .tech-item {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .tech-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .tech-name {
+    font-size: 0.9rem;
+  }
+  
+  .tech-icons {
+    gap: 15px;
+  }
+  
+  @keyframes typing {
+    to { width: 16ch; } 
+  }
+}
