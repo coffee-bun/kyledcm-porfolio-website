@@ -5,7 +5,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Container just wraps the sections */
+/* Container wrap*/
 .about {
   scroll-snap-type: y mandatory;
 }
@@ -20,290 +20,230 @@ body {
   font-size: 2rem;
 }
 
+/* Banner Style */
+.abt-banner {
+  text-align: center;
+  color: #222;
+  padding: 2rem;
+  min-height: 55vh;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+}
+
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  background-color: #111; 
+  border-radius: 50%;
+  opacity: 0.5; 
+  animation: float 12s infinite linear; 
+  filter: blur(0.5px); 
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.35; 
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: translateY(-500px) rotate(360deg) scale(1);
+    opacity: 0.2;
+  }
+}
+
+.abt-banner-content {
+  width: 1100px;
+  margin: 0; 
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  text-align: left; 
+}
+
+.banner-title {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.home-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.breadcrumb-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #008080;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: #777;
+}
+
+.breadcrumb-current {
+  color: #777;
+  font-weight: 500;
+}
+.banner-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 2rem;
+  max-width: 900px;
+  ;
+}
+
+
 /* Section 1 Style*/
 .about-1 {
   background-color: #FFFFFA;
   margin-bottom: 50px;
+  min-height: 170vh;
 }
-/* Section 2 Style*/
-.about-2 {
+/* Section 1 Style*/
+.about-1 {
   background-color: #FFFFFA;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Abstract Background Elements */
+.about-1::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.03) 0%, rgba(0, 0, 0, 0.041) 100%);
+  transform: rotate(15deg);
+  z-index: 0;
+}
+
+/* About-1 Container */
+.about1-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Content Section */
+.content-section {
+  flex: 1;
+  padding: 3rem 0;
+}
+
+.abt-section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 3rem;
+  position: relative;
+  letter-spacing: -0.5px;
+  margin-top: 150px;
+}
+
+.abt-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #101111, #b9b9b9);
+}
+
+.abt-section-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-top: 2rem;
+  max-width: 700px;
+  font-weight: 400;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 450px;
+  height: 550px;
+  background-image: url('/public/images/profile-sample.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+  box-shadow: 30px 30px 0px rgba(0, 0, 0, 0.281);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 140px;
+}
+
+.profile-image:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.08);
 }
 
 /* Section 2 Style */
-.section-2 {
+.about-2 {
   background-color: #FFFFFA;
-  margin-bottom: 20px;
   min-height: 100vh;
-  padding-top: 0px;
-  padding-bottom: 00px;
-}
-
-.section2-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
-  margin-bottom: -5px;
-}
-
-.section-description {
-  max-width: 800px;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 25px;
-  line-height: 1.6;
-  padding: 0 20px;
-}
-
-/* Divider */
-.section-divider {
-  width: 80%;
-  max-width: 900px;
-  height: 2px;
-  background-color: #ccc;
-  border: none;
-  margin: 15px auto 30px auto;
-}
-/* first and second columns */
-.first-column,
-.second-column {
-  background-color: #ffb24700;
-  color: black;
-  padding: 15px;
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.first-column {
-  margin-bottom: -10px;
-
-}
-.tech-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 0 20px;
-}
-
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  background-color: #ffffff;
-  height: 90px; 
-  width: 90px;  
-  border-radius: 15px;
-  margin: 5px;
-}
-.tech-icon {
-  width: 45px;
-  height: 45px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(100%) contrast(200%) brightness(0.8);
-}
-.tech-icon:hover {
-  transform: scale(1.15);
-  filter: grayscale(100%) contrast(250%) brightness(0.8);
-}
-.tech-name {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* Icon Images */
-.html-icon {
-  background-image: url('/public/images/html-icon.png');
-}
-
-.css-icon {
-  background-image: url('/public/images/css-icon.png');
-}
-
-.bootstrap-icon {
-  background-image: url('/public/images/bootstrap-icon.png');
-}
-
-.react-icon {
-  background-image: url('/public/images/react-icon.png');
-}
-
-.flask-icon {
-  background-image: url('/public/images/flask-icon.png');
-}
-
-.flutterflow-icon {
-  background-image: url('/public/images/flutterflow-icon.png');
-}
-
-.c-icon {
-  background-image: url('/public/images/c-icon.png');
-}
-
-.cpp-icon {
-  background-image: url('/public/images/cpp-icon.png');
-}
-
-.javascript-icon {
-  background-image: url('/public/images/javascript-icon.png');
-}
-
-.python-icon {
-  background-image: url('/public/images/python-icon.png');
-}
-
-.mabl-icon {
-  background-image: url('/public/images/mabl-icon.png');
-}
-
-.selenium-icon {
-  background-image: url('/public/images/selenium-icon.png');
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1200px) {
-  .intro-text h1 {
-    font-size: 4rem;
-  }
-  
-  .intro-text h2 {
-    font-size: 1.6rem;
-  }
-  
-  .subtext {
-    font-size: 1.3rem;
-    max-width: 500px;
-  }
-  
-  .tech-item {
-    height: 140px;
-    width: 140px;
-  }
-  
-  .tech-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .tech-name {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .intro-text h1 {
-    font-size: 3rem;
-  }
-  
-  .intro-text h2 {
-    font-size: 1.4rem;
-  }
-  
-  .subtext {
-    font-size: 1.1rem;
-    margin-top: 50px;
-    max-width: 400px;
-  }
-  
-  .enter-button {
-    font-size: 1rem;
-    padding: 8px 35px;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .section-description {
-    font-size: 1rem;
-  }
-  
-  .tech-item {
-    height: 120px;
-    width: 120px;
-  }
-  
-  .tech-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .tech-name {
-    font-size: 1rem;
-  }
-  
-  .tech-icons {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro-text {
-    padding-bottom: 80px;
-  }
-  
-  .intro-text h1 {
-    font-size: 2.2rem;
-  }
-  
-  .intro-text h2 {
-    font-size: 1.2rem;
-  }
-  
-  .subtext {
-    font-size: 1rem;
-    margin-top: 40px;
-    max-width: 300px;
-  }
-  
-  .enter-button {
-    margin-top: 20px;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-  }
-  
-  .section-description {
-    font-size: 0.9rem;
-  }
-  
-  .tech-item {
-    height: 100px;
-    width: 100px;
-  }
-  
-  .tech-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
-  }
-  
-  .tech-name {
-    font-size: 0.9rem;
-  }
-  
-  .tech-icons {
-    gap: 15px;
-  }
-  
-  @keyframes typing {
-    to { width: 16ch; } 
-  }
+  padding: 4rem 0;
+  margin-bottom: 30px;
 }

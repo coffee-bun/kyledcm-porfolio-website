@@ -42,7 +42,7 @@ function Home() {
           <h1 className="typing-1">Hi, I'm Kyle D. Mendoza</h1>
           <h2 className="typing-2">Frontend Developer & QA Tester</h2>
           <div className="subtext">
-            I specialize in creating clean, responsive user interfaces and making sure every detail meets a high standard of quality.
+            Specialize in creating clean, responsive user interfaces and making sure every detail meets a high standard of quality.
           </div>
           <div className="button-group">
             <div className="enter-button" onClick={() => setTimeout(() => navigate('/projects'), 300)}>View Projects</div>
@@ -64,47 +64,48 @@ function Home() {
         </div>
       </div>
 
-        {/* Section 2 */}
-        <div className="section section-2">
-          <div className="section2-content">
-            <div className="three-column-container">
-              <div className="column column-1">
-                <div className="column-content">
-                  {/* Column 1 - Front End Development */}
-                  <div className="front-container"></div>
-                  <h3 className="column-title">Front End Development</h3>
-                  <p className="column-description">
-                    I bring ideas to life in the browser, crafting websites that are fast, 
-                    responsive, and enjoyable to use. Every line of code is written with 
-                    the user in mind.
-                  </p>
-                </div>
-              </div>
-                {/* Column 2 - Web Design */}
-              <div className="column column-2">
-                <div className="column-content">
-                  <div className="web-container"></div>
-                  <h3 className="column-title">Web Design</h3>
-                  <p className="column-description">
-                    I design websites that not only look great but feel intuitive, focusing on clean layouts,
-                    thoughtful details, and ensuring every visitor enjoys the experience.
-                  </p>
-                </div>
-              </div>
-                {/* Column 3 - Quality Assurance */}
-                <div className="column column-3">
-                  <div className="column-content">
-                    <div className="quality-container"></div>
-                    <h3 className="column-title">Quality Assurance</h3>
-                    <p className="column-description">
-                      I make sure everything works exactly as it should. Through careful testing and a sharp eye for detail, 
-                      I help keep projects smooth, reliable, and ready to go.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+{/* Section 2 */}
+<div className="section section-2">
+  <div className="section2-content">
+    <h2 className="section2-title">How I Bring Ideas to Life</h2>
+    <div className="three-column-container">
+      <div className="column column-1">
+        <div className="column-content">
+          {/* Column 1 - Front End Development */}
+          <div className="front-container"></div>
+          <h3 className="column-title">Front End Development</h3>
+          <p className="column-description">
+            I bring ideas to life in the browser, crafting websites that are fast, 
+            responsive, and enjoyable to use. Every line of code is written with 
+            the user in mind.
+          </p>
+        </div>
+      </div>
+      {/* Column 2 - Web Design */}
+      <div className="column column-2">
+        <div className="column-content">
+          <div className="web-container"></div>
+          <h3 className="column-title">Web Design</h3>
+          <p className="column-description">
+            I design websites that not only look great but feel intuitive, focusing on clean layouts,
+            thoughtful details, and ensuring every visitor enjoys the experience.
+          </p>
+        </div>
+      </div>
+      {/* Column 3 - Quality Assurance */}
+      <div className="column column-3">
+        <div className="column-content">
+          <div className="quality-container"></div>
+          <h3 className="column-title">Quality Assurance</h3>
+          <p className="column-description">
+            I make sure everything works exactly as it should. Through careful testing and a sharp eye for detail, 
+            I help keep projects smooth, reliable, and ready to go.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
        </div>
       );
     }
