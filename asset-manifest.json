@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kyledcm-portfolio/static/css/main.a09215ef.css",
-    "main.js": "/kyledcm-portfolio/static/js/main.a9143c80.js",
+    "main.js": "/kyledcm-portfolio/static/js/main.e48affcc.js",
     "static/js/453.2505df65.chunk.js": "/kyledcm-portfolio/static/js/453.2505df65.chunk.js",
     "static/media/personal-two.jpg": "/kyledcm-portfolio/static/media/personal-two.869310c456b8ff857ff1.jpg",
     "static/media/profile-sample.png": "/kyledcm-portfolio/static/media/profile-sample.8094d3f6e358b1ae489b.png",
@@ -9,11 +9,11 @@
     "static/media/design-icon.png": "/kyledcm-portfolio/static/media/design-icon.59d5fd9332cc9f7f4052.png",
     "index.html": "/kyledcm-portfolio/index.html",
     "main.a09215ef.css.map": "/kyledcm-portfolio/static/css/main.a09215ef.css.map",
-    "main.a9143c80.js.map": "/kyledcm-portfolio/static/js/main.a9143c80.js.map",
+    "main.e48affcc.js.map": "/kyledcm-portfolio/static/js/main.e48affcc.js.map",
     "453.2505df65.chunk.js.map": "/kyledcm-portfolio/static/js/453.2505df65.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a09215ef.css",
-    "static/js/main.a9143c80.js"
+    "static/js/main.e48affcc.js"
   ]
 }
