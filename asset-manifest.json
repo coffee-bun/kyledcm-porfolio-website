@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/kyledcm-porfolio-website/static/css/main.793bbabf.css",
-    "main.js": "/kyledcm-porfolio-website/static/js/main.bf49154d.js",
-    "static/js/453.2505df65.chunk.js": "/kyledcm-porfolio-website/static/js/453.2505df65.chunk.js",
-    "static/media/personal-two.jpg": "/kyledcm-porfolio-website/static/media/personal-two.869310c456b8ff857ff1.jpg",
-    "static/media/profile-sample.png": "/kyledcm-porfolio-website/static/media/profile-sample.8094d3f6e358b1ae489b.png",
-    "static/media/quality-icon.png": "/kyledcm-porfolio-website/static/media/quality-icon.7f5760c9fed8f2dc1a96.png",
-    "static/media/design-icon.png": "/kyledcm-porfolio-website/static/media/design-icon.59d5fd9332cc9f7f4052.png",
-    "index.html": "/kyledcm-porfolio-website/index.html",
-    "main.793bbabf.css.map": "/kyledcm-porfolio-website/static/css/main.793bbabf.css.map",
-    "main.bf49154d.js.map": "/kyledcm-porfolio-website/static/js/main.bf49154d.js.map",
-    "453.2505df65.chunk.js.map": "/kyledcm-porfolio-website/static/js/453.2505df65.chunk.js.map"
+    "main.css": "/kyle-dcm-website/static/css/main.0d575649.css",
+    "main.js": "/kyle-dcm-website/static/js/main.13943c94.js",
+    "static/js/453.1594ae3f.chunk.js": "/kyle-dcm-website/static/js/453.1594ae3f.chunk.js",
+    "static/media/personal-two.jpg": "/kyle-dcm-website/static/media/personal-two.869310c456b8ff857ff1.jpg",
+    "static/media/profile-sample.png": "/kyle-dcm-website/static/media/profile-sample.8094d3f6e358b1ae489b.png",
+    "static/media/quality-icon.png": "/kyle-dcm-website/static/media/quality-icon.7f5760c9fed8f2dc1a96.png",
+    "static/media/design-icon.png": "/kyle-dcm-website/static/media/design-icon.59d5fd9332cc9f7f4052.png",
+    "index.html": "/kyle-dcm-website/index.html",
+    "main.0d575649.css.map": "/kyle-dcm-website/static/css/main.0d575649.css.map",
+    "main.13943c94.js.map": "/kyle-dcm-website/static/js/main.13943c94.js.map",
+    "453.1594ae3f.chunk.js.map": "/kyle-dcm-website/static/js/453.1594ae3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.793bbabf.css",
-    "static/js/main.bf49154d.js"
+    "static/css/main.0d575649.css",
+    "static/js/main.13943c94.js"
   ]
 }
