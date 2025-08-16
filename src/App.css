@@ -151,20 +151,36 @@ body {
 /* Main Content */
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 0rem;
+  margin: 0;
 }
 
 /* Footer Styles */
 .footer {
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(5px);
-  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 2rem 2rem;
   margin-top: auto;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  height: 40px; /* Fixed height to keep it low */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: -27px;
+}
+
+.footer-center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-center h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.footer-center p {
+  margin: 0.3rem 0;
+  color: #ccc;
+  font-size: 0.9rem;
 }
 
 .footer-content {
@@ -174,7 +190,6 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 5px;
 }
 
 .footer-left {
@@ -182,11 +197,11 @@ body {
   align-items: center;
   gap: 1rem;
   font-size: 0.8rem;
-  color: #333;
+  color: #ccc;
 }
 
 .divider {
-  color: #aaa;
+  color: #666;
 }
 
 .footer-right {
@@ -200,26 +215,25 @@ body {
 }
 
 .social-icons a {
-  color: #494949;
+  color: #ccc;
   font-size: 1.2rem; 
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #008080;
+  color: #fff;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .footer {
-    padding: 0.8rem 1rem;
-    height: auto;
-    min-height: 60px;
+    padding: 2rem 1rem;
+  margin: 0;
   }
   
   .footer-content {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
   
   .footer-left {
@@ -240,12 +254,12 @@ body {
     font-size: 1.1rem;
   }
 }
-
 /* App Layout */
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 /* Responsive Styles */
@@ -253,6 +267,7 @@ body {
   .navbar {
     padding: 1rem;
     justify-content: center;
+    margin: 0;
   }
   
   .navbar ul {
@@ -273,7 +288,7 @@ body {
   
   .main-content {
     padding: 1rem;
-    margin-left: 0;
+    margin: 0;
   }
   
   .navbar ul li:has(.share-link)::before {
@@ -282,6 +297,7 @@ body {
   
   .footer {
     padding: 1rem;
+    margin: 0;
   }
   
   .footer-text {

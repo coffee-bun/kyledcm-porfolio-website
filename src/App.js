@@ -10,17 +10,18 @@ import Contact from './pages/js/Contact';
 
 function Bookmark({ currentPage }) {
   const pageNames = {
-    '/': 'Home',
+    '/home': 'Home',
     '/about': 'About',
     '/education': 'Education',
     '/projects': 'Projects',
-    '/contact': 'Contact'
+    '/contact': 'Contact',
+    '/test': 'Test'
   };
 
   return (
     <div className="bookmark">
       <div className="bookmark-content">
-        <span>{pageNames[currentPage] || 'Portfolio'}</span>
+        <span>{pageNames[currentPage] || 'Home'}</span>
       </div>
     </div>
   );
@@ -29,6 +30,11 @@ function Bookmark({ currentPage }) {
 function Footer() {
   return (
     <footer className="footer">
+      <div className="footer-center">
+        <h3>Kyle D. Mendoza</h3>
+        <p>kyledmendoza02@gmail.com</p>
+        <p>San Mateo, Rizal. Philippines</p>
+      </div>
       <div className="footer-content">
         <div className="footer-left">
           <span>© {new Date().getFullYear()} All Rights Reserved</span>
@@ -75,6 +81,7 @@ function App() {
             <li><Link to="/education">Education</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/test">Test</Link></li> {/* NEW TEST LINK */}
             <li>
               <a href="#" onClick={handleShareClick} className="share-link">
                 Share
@@ -91,6 +98,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/test" element={<h1 style={{ textAlign: 'center' }}>✅ Routing Works!</h1>} /> {/* NEW TEST ROUTE */}
         </Routes>
       </main>
       

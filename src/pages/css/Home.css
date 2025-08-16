@@ -13,7 +13,7 @@ body {
 
 /* Section Main */
 .section {
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ body {
   background-repeat: no-repeat;
   color: white; 
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .intro-text {
